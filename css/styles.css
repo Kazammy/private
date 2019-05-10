@@ -58,6 +58,12 @@ body {
   border-radius: 10px;
   background-color: gold;
   padding: 10px;
+  font-family: 'Press Start 2P', cursive;
+
+}
+.header4 {
+  font-family: 'Press Start 2P', cursive;
+
 }
 .rbtn1  {
   background-color: gold;
@@ -77,4 +83,10 @@ body {
 }
 ::placeholder {
   color: purple;
+  font-family: 'Shojumaru', cursive;
+
+}
+.column label {
+  font-family: 'Shojumaru', cursive;
+  color: red;
 }
