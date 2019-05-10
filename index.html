@@ -7,13 +7,14 @@
     <script src="js/jquery-3.4.0.js"></script>
     <script src="js/scripts.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
     <title>PIGDICE</title>
   </head>
   <body>
     <div class="container">
       <div class="header1">
         <img scr="img/kingdice.png">
-         <h1><strong>PIGDICE GAME</strong></h1>
+         <h1 class="pig"><strong>PIGDICE GAME</strong></h1>
       </div>
     <section id="rules">
       <div class="header2">
@@ -34,17 +35,31 @@
       <form id="Gamertags">
         <h4 class="header4">Enter your name</h4>
           <div class="row">
-            <div class="col-md-7">
+            <div class="column">
               <label for="Player1">Player 1</label>
               <input id="play1" type="text" name="P1" placeholder="Name...">
             </div>
-            <div class="col-md-7">
+            <div class="column">
               <label for="Player2">Player 2</label>
               <input type="text" name="P2" placeholder="Name...">
             </div>
-          <input id="PLAY" type="submit" name="submit" value="submit">
           </div>
       </form>
+      <button class="btn" type="button"><strong>PLAY</strong></button>
+    </div>
+
+    <div class="Gameplay">
+      <div class="row">
+        <div class="col-md-6">
+          <button class="rbtn1">ROLL</button>
+          <button class="hbtn1">HOLD</button>
+        </div>
+        <div class="col-md-6">
+          <button class="rbtn2">ROLL</button>
+          <button class="hbtn2">HOLD</button>
+        </div>
+        </div>
+        </div>
     </div>
   </body>
 </html>
