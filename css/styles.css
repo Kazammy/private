@@ -26,6 +26,8 @@ body {
  background-color: rgba(0, 0, 0, 0.5);
  border-radius: 15px;
  box-shadow: 3px 3px 11px #000000;
+ font-family: 'Macondo Swash Caps', cursive;
+
 }
 .Playernames  {
   margin: 20px;
@@ -68,4 +70,11 @@ body {
 }
 .hbtn2  {
   background-color: gold;
+}
+.input input {
+  background: transparent;
+  color: white;
+}
+::placeholder {
+  color: purple;
 }
