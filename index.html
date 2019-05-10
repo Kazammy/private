@@ -7,7 +7,10 @@
     <script src="js/jquery-3.4.0.js"></script>
     <script src="js/scripts.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shojumaru" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
     <title>PIGDICE</title>
   </head>
   <body>
@@ -32,31 +35,43 @@
 
      <div class="Playernames">
        <h3 class="header3">NEW GAME</h3>
-      <form id="Gamertags">
-        <h4 class="header4">Enter your name</h4>
+       <form id="Gamertags">
+        <h4 class="header4">ENTER YOUR NAME</h4>
           <div class="row">
             <div class="column">
-              <label for="Player1">Player 1</label>
+              <label for="Player1">PLAYER 1</label>
+              <div class="input">
               <input id="play1" type="text" name="P1" placeholder="Name...">
             </div>
+            </div>
             <div class="column">
-              <label for="Player2">Player 2</label>
-              <input type="text" name="P2" placeholder="Name...">
+              <label for="Player2">PLAYER 2</label>
+              <div class="input">
+              <input id="play2" type="text" name="P2" placeholder="Name...">
+            </div>
             </div>
           </div>
+          <button class="btn" type="button"><strong>PLAY</strong></button>
+          <input class="Reset" type="reset" value="RESET"<br />
       </form>
-      <button class="btn" type="button"><strong>PLAY</strong></button>
     </div>
 
     <div class="Gameplay">
       <div class="row">
-        <div class="col-md-6">
-          <button class="rbtn1">ROLL</button>
-          <button class="hbtn1">HOLD</button>
+
+        <div class="coll">
+          <p align="left">ROLL:</p>
+          <p align="left">TURN SCORE:</p>
+          <p align="left">TOTAL SCORE:</p>
+            <button class="rbtn1"> ROLL </button>
+            <button class="hbtn1"> HOLD </button>
         </div>
-        <div class="col-md-6">
-          <button class="rbtn2">ROLL</button>
-          <button class="hbtn2">HOLD</button>
+        <div class="coll">
+          <p align="left">ROLL:</p>
+          <p align="left">TURN SCORE:</p>
+          <p align="left">TOTAL SCORE:</p>
+            <button class="rbtn2"> ROLL </button>
+            <button class="hbtn2"> HOLD </button>
         </div>
         </div>
         </div>
