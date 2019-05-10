@@ -92,3 +92,10 @@ body {
   font-family: 'Shojumaru', cursive;
   color: red;
 }
+.Gameplay {
+  display:none;
+}
+.Reset {
+  color: black;
+  background-color: gold;
+}
