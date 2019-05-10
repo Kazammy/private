@@ -27,3 +27,10 @@ body {
  border-radius: 15px;
  box-shadow: 3px 3px 11px #000000;
 }
+.Playernames {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  box-shadow: 3px 3px 11px #000000;
+}
