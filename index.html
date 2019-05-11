@@ -17,7 +17,7 @@
     <div class="container">
       <div class="header1">
         <img scr="img/kingdice.png">
-         <h1 class="pig"><strong>PIGDICE GAME</strong></h1>
+         <h1 class="pig"><strong>PIG-DICE GAME</strong></h1>
       </div>
     <section id="rules">
       <div class="header2">
@@ -27,7 +27,7 @@
        <p>Here are rules that the game follows;</p>
          <ul>
           <li> When a player rolls dice and the outcome is between 2 and 6 it is added to their turn score.</li>
-          <li> when the outcome of the dice is 1,the turn score for the player becomes zero and the chance passes to the second player to play.</li>
+          <li> when the outcome of the dice is 1,the round score for the player becomes zero and the chance passes to the second player to play.</li>
           <li> When a player chooses to "HOLD" it means that he/she has passed on their chance to roll dice and thus their turn score is added to their total score.</li>
           <li> The player who manages to ultimately reach 100 points first wins the game and the two can start another game by pressing reset.</li>
          </ul>
@@ -36,21 +36,7 @@
      <div class="Playernames">
        <h3 class="header3">NEW GAME</h3>
        <form id="Gamertags">
-        <h4 class="header4">ENTER YOUR NAME</h4>
-          <div class="row">
-            <div class="column">
-              <label for="Player1">PLAYER 1</label>
-              <div class="input">
-              <input id="play1" type="text" name="P1" placeholder="Name...">
-            </div>
-            </div>
-            <div class="column">
-              <label for="Player2">PLAYER 2</label>
-              <div class="input">
-              <input id="play2" type="text" name="P2" placeholder="Name...">
-            </div>
-            </div>
-          </div>
+        <h4 class="header4">START GAME BY CLICKING PLAY!!!</h4>
           <button class="btn" type="button"><strong>PLAY</strong></button>
           <input class="Reset" type="reset" value="RESET"<br />
       </form>
@@ -60,16 +46,18 @@
       <div class="row">
 
         <div class="coll">
-          <p align="left">ROLL:</p>
-          <p align="left">TURN SCORE:</p>
-          <p align="left">TOTAL SCORE:</p>
+          <h5 class="header5">PLAYER 1</h5>
+          <p align="left"><span class="rolldice">ROLL:</span></p>
+          <p align="left"><span class="roundscore">ROUND SCORE:</span></p>
+          <p align="left"><span class="totalscore">TOTAL SCORE:</span></p>
             <button class="rbtn1"> ROLL </button>
             <button class="hbtn1"> HOLD </button>
         </div>
         <div class="coll">
-          <p align="left">ROLL:</p>
-          <p align="left">TURN SCORE:</p>
-          <p align="left">TOTAL SCORE:</p>
+          <h6 class="header6">PLAYER 2</h6>
+          <p align="left"><span class="rolldice2">ROLL:</span></p>
+          <p align="left"><span class="roundscore2">ROUND SCORE:</span></p>
+          <p align="left"><span class="totalscore2">TOTAL SCORE:</span></p>
             <button class="rbtn2"> ROLL </button>
             <button class="hbtn2"> HOLD </button>
         </div>
