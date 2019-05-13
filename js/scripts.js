@@ -1,14 +1,14 @@
 var throwdice = function () {
   return Math.floor(6*Math.random ()) + 1;
 }
-
 function Player (turn) {
   this.roll = 0;
   this.tempscore = 0;
   this.totalscore = 0;
   this.turn =0;
 }
-                     ..
+
+
 Player.prototype.rollone = function () {
   if (this.roll===1) {
     this.tempscore = 0;
@@ -18,13 +18,11 @@ Player.prototype.rollone = function () {
     this.tempscore += this.roll
   }
 }
-
 Player.prototype.hold = function (){
   this.totalscore += this.tempscore;
   this.tempscore =o;
   this.changeturn ();
 }
-
 Player.prototype.changeturn = function (){
   if(this.roll===1) {
     this.turn = false;
@@ -33,7 +31,6 @@ Player.prototype.changeturn = function (){
     this.turn = true;
   }
 }
-
 Player.prototype.winnerCheck = function () {
   if(this.totalscore>=100) {
     alert(" You are the winner!!");
@@ -45,14 +42,14 @@ Player.prototype.winnerCheck = function () {
     $(".kzz").text(player1);
     var player2 = prompt("Enter your name..");
     $(".kz").text(player2);
-    $(".Gameplay").show();
+    $(".GamePlay").show();
   });
   $(".Reset").click(function() {
     $(".Gameplay").hide();
   });
   $("button.rbtn1").click(function(event) {
     rbtn1 = throwdice() ;
-    $(".rolldice").text(rbtn1);                         ..
+    $(".rolldice").text(rbtn1);
     player1.rollone ()
     $(".roundscore").text(player1.tempscore);
   });
@@ -66,6 +63,13 @@ Player.prototype.winnerCheck = function () {
     player1.hold();
     $(".totalscore1").text(player1.totalscore);
     $(".roundscore").empty();
+    $(".rolldice").empty();
+    player.winnerCheck();
+  });
+  $("button.hbtn2").click(function(event) {
+    player2.hold();
+    $(".totalscore2").text(player2.totalscore);
+    $(".roundscore2").empty();
     $(".rolldice").empty();
     player.winnerCheck();
   });
