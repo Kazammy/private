@@ -52,7 +52,7 @@ Player.prototype.winnerCheck = function () {
   });
   $("button.rbtn1").click(function(event) {
     rbtn1 = throwdice() ;
-    $(".rolldice").text(rbtn1);
+    $(".rolldice").text(rbtn1);                         ..
     player1.rollone ()
     $(".roundscore").text(player1.tempscore);
   });
