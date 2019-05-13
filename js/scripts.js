@@ -8,7 +8,6 @@ function Player (turn) {
   this.totalscore = 0;
   this.turn =0;
 }
-                     ..
 Player.prototype.rollone = function () {
   if (this.roll===1) {
     this.tempscore = 0;
@@ -33,7 +32,6 @@ Player.prototype.changeturn = function (){
     this.turn = true;
   }
 }
-
 Player.prototype.winnerCheck = function () {
   if(this.totalscore>=100) {
     alert(" You are the winner!!");
@@ -52,7 +50,7 @@ Player.prototype.winnerCheck = function () {
   });
   $("button.rbtn1").click(function(event) {
     rbtn1 = throwdice() ;
-    $(".rolldice").text(rbtn1);                         ..
+    $(".rolldice").text(rbtn1);                         
     player1.rollone ()
     $(".roundscore").text(player1.tempscore);
   });
