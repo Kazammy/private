@@ -8,7 +8,7 @@ function Player (turn) {
   this.totalscore = 0;
   this.turn =0;
 }
-
+                     ..
 Player.prototype.rollone = function () {
   if (this.roll===1) {
     this.tempscore = 0;
