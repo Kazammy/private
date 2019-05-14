@@ -40,14 +40,15 @@ Player.prototype.winnerCheck = function () {
     $(".kzz").text(player1);
     var player2 = prompt("Enter your name..");
     $(".kz").text(player2);
-    $(".GamePlay").show();
+    $(".Gameplay").show();
   });
   $(".Reset").click(function() {
     $(".Gameplay").hide();
   });
   $("button.rbtn1").click(function(event) {
     rbtn1 = throwdice() ;
-    $(".rolldice").text(rbtn1);                         
+    $(".rolldice").text(rbtn1);
+    $(".rolldice").text(rbtn1);                         ..
     player1.rollone ()
     $(".roundscore").text(player1.tempscore);
   });
@@ -61,13 +62,6 @@ Player.prototype.winnerCheck = function () {
     player1.hold();
     $(".totalscore1").text(player1.totalscore);
     $(".roundscore").empty();
-    $(".rolldice").empty();
-    player.winnerCheck();
-  });
-  $("button.hbtn2").click(function(event) {
-    player2.hold();
-    $(".totalscore2").text(player2.totalscore);
-    $(".roundscore2").empty();
     $(".rolldice").empty();
     player.winnerCheck();
   });
